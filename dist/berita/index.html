@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="d1YRT2hRVJIx923attiZQkmUAtJ1mgPdBLRsNMZV">
+
+    <title>Laravel</title>
+
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="http://localhost/build/assets/app-BiA6k6Pf.css" /><link rel="modulepreload" href="http://localhost/build/assets/app-BjCBnTiP.js" /><link rel="stylesheet" href="http://localhost/build/assets/app-BiA6k6Pf.css" /><script type="module" src="http://localhost/build/assets/app-BjCBnTiP.js"></script></head>
+
+<body class="bg-gray-100 text-gray-800 font-sans antialiased">
+    <div class="min-h-screen">
+        <nav class="bg-white shadow">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <a class="text-2xl font-bold text-blue-600 hover:text-blue-500 transition duration-300"
+                        href="/">
+                        Project Pemograman WEB
+                    </a>
+                    <div class="hidden md:flex space-x-8">
+                        <a class="text-gray-600 hover:text-blue-500 transition duration-200 px-3 py-2 rounded-md"
+                            href="/dashboard">Home</a>
+                        <a class="text-gray-600 hover:text-blue-500 transition duration-200 px-3 py-2 rounded-md"
+                            href="/belajar">Artikel</a>
+                        <a class="text-gray-600 hover:text-blue-500 transition duration-200 px-3 py-2 rounded-md"
+                            href="http://localhost/berita">Berita</a>
+                        <a class="text-gray-600 hover:text-blue-500 transition duration-200 px-3 py-2 rounded-md"
+                            href="http://localhost/profile/edit">Profile</a>
+                    </div>
+                    <button class="md:hidden focus:outline-none" id="navbar-toggle">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="navbar-menu" class="hidden md:hidden">
+                <div class="container mx-auto px-4 py-2">
+                    <div class="flex flex-col space-y-4">
+                        <a class="text-gray-600 hover:text-blue-500 transition duration-200" href="/dashboard">Home</a>
+                        <a class="text-gray-600 hover:text-blue-500 transition duration-200" href="/belajar">Artikel</a>
+                        <a class="text-gray-600 hover:text-blue-500 transition duration-200"
+                            href="http://localhost/berita">Berita</a>
+                        <a class="text-gray-600 hover:text-blue-500 transition duration-200"
+                            href="http://localhost/profile/edit">Profile</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <main class="container mx-auto mt-4">
+                <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">Manajemen Berita & Artikel</h1>
+
+        
+        <div class="bg-gradient-to-br from-purple-200 to-purple-300 shadow-lg rounded-lg overflow-hidden mb-6">
+            <div class="px-6 py-4 bg-purple-400 flex justify-between items-center rounded-t-lg shadow-inner">
+                <h5 class="text-xl font-semibold text-gray-800">Daftar Berita & Artikel</h5>
+                <a href="http://localhost/berita/create"
+                    class="inline-flex items-center bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2 px-4 rounded-lg shadow-md transition-all transform hover:scale-105">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M3 12h18m-9 9h9">
+                        </path>
+                    </svg>
+                    Tambah Berita/Artikel
+                </a>
+            </div>
+            <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:shadow-2xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="http://localhost/storage/covers/9rZuUmJPIvSBa4nPwJQkPRgFwjf4k8PfyqJK0P5Z.jpg"
+                            alt="Ponsel Jatuh Saat Selfie, Pejabat India Perintahkan Kuras Bendungan">
+                        <div class="p-4 bg-gray-100">
+                            <h5 class="text-xl font-semibold text-gray-800">Ponsel Jatuh Saat Selfie, Pejabat India Perintahkan Kuras Bendungan</h5>
+                            <p class="text-gray-600 mt-2"><strong>Penulis:</strong> shanty</p>
+                            <div class="flex space-x-2 mt-4">
+                                <a href="http://localhost/berita/bunny-and-friends"
+                                    class="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3"></path>
+                                    </svg>
+                                    Detail
+                                </a>
+                                <a href="http://localhost/berita/bunny-and-friends/edit"
+                                    class="flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.232 5.232a1 1 0 00-1.415 0L7.758 11.585 6 15l3.414-1.758 6.06-6.06a1 1 0 000-1.415z">
+                                        </path>
+                                    </svg>
+                                    Edit
+                                </a>
+                                <form action="http://localhost/berita/bunny-and-friends" method="POST"
+                                    onsubmit="return confirm('Apakah Anda yakin ingin menghapus berita ini?')">
+                                    <input type="hidden" name="_token" value="d1YRT2hRVJIx923attiZQkmUAtJ1mgPdBLRsNMZV" autocomplete="off">                                    <input type="hidden" name="_method" value="DELETE">                                    <button type="submit"
+                                        class="flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Hapus
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:shadow-2xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="http://localhost/storage/covers/NSUiEbIUGTkTm7g6MPKHPtLnhKUcN8YyddfhinaB.jpg"
+                            alt="Jadi Pemenang Miss Grand International 2024, Rachel Gupta Bawa Pulang Hadiah Piring Cantik &amp; Rinso">
+                        <div class="p-4 bg-gray-100">
+                            <h5 class="text-xl font-semibold text-gray-800">Jadi Pemenang Miss Grand International 2024, Rachel Gupta Bawa Pulang Hadiah Piring Cantik &amp; Rinso</h5>
+                            <p class="text-gray-600 mt-2"><strong>Penulis:</strong> shanty</p>
+                            <div class="flex space-x-2 mt-4">
+                                <a href="http://localhost/berita/jadi-pemenang-miss-grand-international-2024-rachel-gupta-bawa-pulang-hadiah-segini"
+                                    class="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3"></path>
+                                    </svg>
+                                    Detail
+                                </a>
+                                <a href="http://localhost/berita/jadi-pemenang-miss-grand-international-2024-rachel-gupta-bawa-pulang-hadiah-segini/edit"
+                                    class="flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.232 5.232a1 1 0 00-1.415 0L7.758 11.585 6 15l3.414-1.758 6.06-6.06a1 1 0 000-1.415z">
+                                        </path>
+                                    </svg>
+                                    Edit
+                                </a>
+                                <form action="http://localhost/berita/jadi-pemenang-miss-grand-international-2024-rachel-gupta-bawa-pulang-hadiah-segini" method="POST"
+                                    onsubmit="return confirm('Apakah Anda yakin ingin menghapus berita ini?')">
+                                    <input type="hidden" name="_token" value="d1YRT2hRVJIx923attiZQkmUAtJ1mgPdBLRsNMZV" autocomplete="off">                                    <input type="hidden" name="_method" value="DELETE">                                    <button type="submit"
+                                        class="flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Hapus
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:shadow-2xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="http://localhost/storage/covers/svc9rNz7bZhiPZm5Yswzsh5lh1iBln2DsNRDmjE5.jpg"
+                            alt="Salah mengambil Matakuliah atas, Tugas UTS Matakuliah Pemrograman aplikasi Web, bikin sesak napas. Begini Faktanya">
+                        <div class="p-4 bg-gray-100">
+                            <h5 class="text-xl font-semibold text-gray-800">Salah mengambil Matakuliah atas, Tugas UTS Matakuliah Pemrograman aplikasi Web, bikin sesak napas. Begini Faktanya</h5>
+                            <p class="text-gray-600 mt-2"><strong>Penulis:</strong> shanty</p>
+                            <div class="flex space-x-2 mt-4">
+                                <a href="http://localhost/berita/bunny-and-friends-2"
+                                    class="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3"></path>
+                                    </svg>
+                                    Detail
+                                </a>
+                                <a href="http://localhost/berita/bunny-and-friends-2/edit"
+                                    class="flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.232 5.232a1 1 0 00-1.415 0L7.758 11.585 6 15l3.414-1.758 6.06-6.06a1 1 0 000-1.415z">
+                                        </path>
+                                    </svg>
+                                    Edit
+                                </a>
+                                <form action="http://localhost/berita/bunny-and-friends-2" method="POST"
+                                    onsubmit="return confirm('Apakah Anda yakin ingin menghapus berita ini?')">
+                                    <input type="hidden" name="_token" value="d1YRT2hRVJIx923attiZQkmUAtJ1mgPdBLRsNMZV" autocomplete="off">                                    <input type="hidden" name="_method" value="DELETE">                                    <button type="submit"
+                                        class="flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Hapus
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:shadow-2xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="http://localhost/storage/covers/0pxMGgMHhRe9jo8MvOFirQUkRE4CaMAcCzWa7X37.png"
+                            alt="Jadi Pemenang Miss Grand International 2024, Rachel Gupta Bawa Pulang Hadiah Segini">
+                        <div class="p-4 bg-gray-100">
+                            <h5 class="text-xl font-semibold text-gray-800">Jadi Pemenang Miss Grand International 2024, Rachel Gupta Bawa Pulang Hadiah Segini</h5>
+                            <p class="text-gray-600 mt-2"><strong>Penulis:</strong> shanty</p>
+                            <div class="flex space-x-2 mt-4">
+                                <a href="http://localhost/berita/jadi-pemenang-miss-grand-international-2024-rachel-gupta-bawa-pulang-hadiah-segini-2"
+                                    class="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3"></path>
+                                    </svg>
+                                    Detail
+                                </a>
+                                <a href="http://localhost/berita/jadi-pemenang-miss-grand-international-2024-rachel-gupta-bawa-pulang-hadiah-segini-2/edit"
+                                    class="flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.232 5.232a1 1 0 00-1.415 0L7.758 11.585 6 15l3.414-1.758 6.06-6.06a1 1 0 000-1.415z">
+                                        </path>
+                                    </svg>
+                                    Edit
+                                </a>
+                                <form action="http://localhost/berita/jadi-pemenang-miss-grand-international-2024-rachel-gupta-bawa-pulang-hadiah-segini-2" method="POST"
+                                    onsubmit="return confirm('Apakah Anda yakin ingin menghapus berita ini?')">
+                                    <input type="hidden" name="_token" value="d1YRT2hRVJIx923attiZQkmUAtJ1mgPdBLRsNMZV" autocomplete="off">                                    <input type="hidden" name="_method" value="DELETE">                                    <button type="submit"
+                                        class="flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Hapus
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:shadow-2xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="http://localhost/storage/covers/BMlryv8TXPIlWov3TAW2r4IrIt91MWL5qYRnOFg1.jpg"
+                            alt="lupa judulnya">
+                        <div class="p-4 bg-gray-100">
+                            <h5 class="text-xl font-semibold text-gray-800">lupa judulnya</h5>
+                            <p class="text-gray-600 mt-2"><strong>Penulis:</strong> shanty</p>
+                            <div class="flex space-x-2 mt-4">
+                                <a href="http://localhost/berita/lupa-judulnya"
+                                    class="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3"></path>
+                                    </svg>
+                                    Detail
+                                </a>
+                                <a href="http://localhost/berita/lupa-judulnya/edit"
+                                    class="flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.232 5.232a1 1 0 00-1.415 0L7.758 11.585 6 15l3.414-1.758 6.06-6.06a1 1 0 000-1.415z">
+                                        </path>
+                                    </svg>
+                                    Edit
+                                </a>
+                                <form action="http://localhost/berita/lupa-judulnya" method="POST"
+                                    onsubmit="return confirm('Apakah Anda yakin ingin menghapus berita ini?')">
+                                    <input type="hidden" name="_token" value="d1YRT2hRVJIx923attiZQkmUAtJ1mgPdBLRsNMZV" autocomplete="off">                                    <input type="hidden" name="_method" value="DELETE">                                    <button type="submit"
+                                        class="flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Hapus
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:shadow-2xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="http://localhost/storage/covers/B9P7zh8k1xL9vuEPC7av6CX6ma1OjFic1fhWNYcV.jpg"
+                            alt="Bunny and Friends6">
+                        <div class="p-4 bg-gray-100">
+                            <h5 class="text-xl font-semibold text-gray-800">Bunny and Friends6</h5>
+                            <p class="text-gray-600 mt-2"><strong>Penulis:</strong> shanty</p>
+                            <div class="flex space-x-2 mt-4">
+                                <a href="http://localhost/berita/bunny-and-friends6"
+                                    class="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3"></path>
+                                    </svg>
+                                    Detail
+                                </a>
+                                <a href="http://localhost/berita/bunny-and-friends6/edit"
+                                    class="flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.232 5.232a1 1 0 00-1.415 0L7.758 11.585 6 15l3.414-1.758 6.06-6.06a1 1 0 000-1.415z">
+                                        </path>
+                                    </svg>
+                                    Edit
+                                </a>
+                                <form action="http://localhost/berita/bunny-and-friends6" method="POST"
+                                    onsubmit="return confirm('Apakah Anda yakin ingin menghapus berita ini?')">
+                                    <input type="hidden" name="_token" value="d1YRT2hRVJIx923attiZQkmUAtJ1mgPdBLRsNMZV" autocomplete="off">                                    <input type="hidden" name="_method" value="DELETE">                                    <button type="submit"
+                                        class="flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Hapus
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:shadow-2xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="http://localhost/storage/covers/bMx9qbRyWKu1tYPhyrlwmpgBN86tVMzqGFEb9tUF.png"
+                            alt="Ingin Membuat Website Menggunakan Joomla? BEGINI CARANYA">
+                        <div class="p-4 bg-gray-100">
+                            <h5 class="text-xl font-semibold text-gray-800">Ingin Membuat Website Menggunakan Joomla? BEGINI CARANYA</h5>
+                            <p class="text-gray-600 mt-2"><strong>Penulis:</strong> shanty</p>
+                            <div class="flex space-x-2 mt-4">
+                                <a href="http://localhost/berita/ingin-membuat-website-menggunakan-joomla-begini-caranya"
+                                    class="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3"></path>
+                                    </svg>
+                                    Detail
+                                </a>
+                                <a href="http://localhost/berita/ingin-membuat-website-menggunakan-joomla-begini-caranya/edit"
+                                    class="flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-md transition-all transform hover:scale-105">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.232 5.232a1 1 0 00-1.415 0L7.758 11.585 6 15l3.414-1.758 6.06-6.06a1 1 0 000-1.415z">
+                                        </path>
+                                    </svg>
+                                    Edit
+                                </a>
+                                <form action="http://localhost/berita/ingin-membuat-website-menggunakan-joomla-begini-caranya" method="POST"
+                                    onsubmit="return confirm('Apakah Anda yakin ingin menghapus berita ini?')">
+                                    <input type="hidden" name="_token" value="d1YRT2hRVJIx923attiZQkmUAtJ1mgPdBLRsNMZV" autocomplete="off">                                    <input type="hidden" name="_method" value="DELETE">                                    <button type="submit"
+                                        class="flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Hapus
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('navbar-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('navbar-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
